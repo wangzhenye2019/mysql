@@ -10,7 +10,12 @@ echo "[info]第 $i 个数据库 itpux$i 创建成功"
 done
 echo "-----------------------------------"
 echo "恭喜你：一共有 $i 个数据库已创建成功！"
+echo "----------数据库清单信息---------------"
+sql2=`mysql -u$user -p$passwd -h$host -e "show databases;"` | grep itpux
 
+
+#mysql -u$user -p$passwd -h$host -e "show databases;"
+printf(sql2())
 
 
 
